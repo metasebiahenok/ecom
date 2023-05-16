@@ -1,0 +1,66 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My E-commerce Website</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<!-- Other meta tags and stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-9zq+Lz8v+Z+J+ZJQ5/4z+JvzvzQGJZ6x5vzvJZvJZvJZvJZvJZvJZvJZvJZvJZvJZvJZvJZvJZvJZvJZvJZvJZw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+</head>
+<body>
+<section class="registration-form">
+	 <h1>Registration Form</h1>
+        <form action="register.php" method="post">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required>
+            
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+                 <label for="subcity">Subcity:</label>
+           <select id="Subcity" name="subcity" required>
+		    <option value="" selected disabled>Select a subcity</option>
+                <option value="Bole">Bole</option>
+                <option value="akaki_kality">akaki kality</option>
+                <option value="yeka">yeka</option>
+				  <option value="lemi_kura">lemi kura</option>
+                <option value="cherekos">cherkos</option>
+                <option value="kolfe">kolefe </option>
+				  <option value="arada">arada</option>
+                <option value="addiss_ketema">adiss ketema</option>
+                <option value="gulele">gulele</option>
+				  <option value="nifas silk">nifas silk</option>
+                <option value="lideta">lideta</option>
+               
+            </select>
+            <label for="wereda">woreda:</label>
+            <input type="number" min="1" max="20" id="woreda" name="wereda" required>
+			     
+            <label for="hn">house numebr:</label>
+            <input type="number" id="hn" name="hn" required>
+            <label for="payment_method">Payment Method:</label>
+            <select id="payment_method" name="payment_method" required>
+			 <option value="" selected disabled>Select payment method</option>
+                <option value="credit_card">CBE</option>
+                <option value="debit_card">Tele Birr</option>
+             
+            </select>
+          <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+            <input type="submit" value="Register">
+			 <div class="h3 mt-4" style="margin:auto; text-align:center;">
+            <p>Already have an account? <strong><a href="signin.php" style="padding: 0; margin:0; color:#0062cc;">Sing in</a></strong></p>
+          </div>
+        </form>
+</section>
+<body>
+</html>
