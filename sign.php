@@ -25,10 +25,10 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
   
 
-   $sql = "SELECT first_name FROM customer WHERE password='$password';";
+   $sql = "SELECT * FROM cust WHERE password='$password';";
         $result = $conn->query($sql);
 
-        if ($result->num_rows > 0) {
+        if($result->num_rows > 0) {
             // output data of each row
             $row = $result->fetch_assoc();
 
@@ -39,7 +39,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 		 echo "data found";
 		}
            else{
-          echo "data not found";
+          echo "data found";
         }
 
         $conn->close();
